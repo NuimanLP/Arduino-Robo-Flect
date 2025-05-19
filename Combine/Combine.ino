@@ -122,7 +122,8 @@ void loop() {
 
     showDistance(dcm);
     Serial.print(F("Dist: "));
-    if (dcm >= 0) Serial.print(dcm);
+    if (dcm == 819) Serial.print("Error");
+    else if (dcm >= 0) Serial.print(dcm);
     else          Serial.print(F("Out of range"));
     Serial.println(F(" cm"));
 
@@ -146,7 +147,10 @@ void showCounter() {
 void showDistance(int cm) {
   tft.fillRect(5, 80, 130, 20, bgColor);
   tft.setCursor(5, 80);
-  if (cm >= 0) {
+  if (cm == 819) {
+    tft.print(F("Error"));
+  }
+  else if (cm >= 0) {
     tft.print(F("Dist:"));
     tft.print(cm);
     tft.print(F(" cm"));
