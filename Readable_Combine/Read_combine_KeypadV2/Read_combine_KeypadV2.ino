@@ -108,7 +108,7 @@ void loop() {
   if (now-lastSensor>=SENSOR_INTERVAL) {
     uint16_t mm = sensor.readRangeContinuousMillimeters();
     bool to = sensor.timeoutOccurred();
-    int dcm = (!to && mm!=65535)? mm/10 : -1;
+    int dcm = (!to && mm!=65535 &&)? mm/10 : -1;
     lastSensor = now;
     // เตรียมข้อความแสดงระยะ พร้อมเช็คกรณีพิเศษ 819
     String distText;

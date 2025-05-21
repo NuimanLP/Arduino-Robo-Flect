@@ -1,7 +1,7 @@
 #include <Wire.h>
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   while (!Serial);
   Wire.begin();               // Mega: SDA=20, SCL=21
   Serial.println(F("I²C Multi-Device Scanner"));

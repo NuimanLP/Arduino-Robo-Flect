@@ -92,9 +92,8 @@ void loop() {
   if (now - lastSensor >= SENSOR_INTERVAL) {
     uint16_t mm = sensor.readRangeContinuousMillimeters();
     bool to = sensor.timeoutOccurred();
-    int dcm = (!to && mm != 65535) ? mm/10 : -1;
-    lastSensor = now;
-    String distText = (dcm == 819) ? "Error" : (dcm >= 0 ? String(dcm)+" cm" : "--");
+    int dcm = (!to && mm != 65535 && (mm/10) != 819)? (mm / 10) : -1;    lastSensor = now;
+    String distText = (dcm >= 0 ? String(dcm)+" cm" : "--");
     updateField(xDistNum,80,60,16,distText);
     Serial.print("Dist: "); Serial.println(distText);
   }
