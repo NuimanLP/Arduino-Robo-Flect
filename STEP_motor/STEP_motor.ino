@@ -1,15 +1,15 @@
 #include <AccelStepper.h>
 
 // กำหนดขาเชื่อมต่อกับไดร์เวอร์
-#define STEP_PIN 9   // ขาส่งพัลส์ (STEP หรือ PUL+)
-#define DIR_PIN  8   // ขาส่งทิศทาง (DIR+)
+#define STEP_PIN 7   // ขาส่งพัลส์ (STEP หรือ PUL+) ON mega use PIN 7, UNO 9
+#define DIR_PIN  6   // ขาส่งทิศทาง (DIR+) ON mega use  PIN6 , UNO 8
 
 // ตั้งค่าก้าวทั้งหมดที่ต้องการให้เป็นระยะ 70 cm
 const long STEPS_PER_RUN = 3366;  //400 ~17 cm 1.)3366 ~70cm [2.37A] 2.)
 
 // ค่าความเร็วสูงสุดและการเร่ง (ปรับได้ตามมอเตอร์และโหลด)
-const float MAX_SPEED     = 2200.0;   // หน่วย: ก้าว/วินาที ,1000 [2200 MAX]
-const float ACCELERATION  = 2200.0;    // หน่วย: ก้าว/วินาที²,500 [2200 MAX]
+const float MAX_SPEED     = 1000.0;   // หน่วย: ก้าว/วินาที ,1000 [2200 MAX]
+const float ACCELERATION  = 500.0;    // หน่วย: ก้าว/วินาที²,500 [2200 MAX]
 
 // สร้างอ็อบเจ็กต์ AccelStepper แบบใช้ driver 2 ขา
 AccelStepper stepper(AccelStepper::DRIVER, STEP_PIN, DIR_PIN);
