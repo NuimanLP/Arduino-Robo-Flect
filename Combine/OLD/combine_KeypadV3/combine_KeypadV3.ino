@@ -6,10 +6,10 @@
 #include <Keypad.h>
 
 // ====== Stepping Motor (Driver mode) ======
-#define STEP_PIN     7       // STEP signal
-#define DIR_PIN      6       // DIR signal
-#define SW_FWD_PIN  22       // forward switch (active LOW)
-#define SW_BWD_PIN  23       // backward switch (active LOW)
+#define STEP_PIN     14       // STEP signal .7
+#define DIR_PIN      15      // DIR signal ,6
+#define SW_FWD_PIN  16       // forward switch (active LOW) , 22
+#define SW_BWD_PIN  17       // backward switch (active LOW),23
 
 const float MAX_SPEED    = 1333.0;
 const float ACCELERATION = 2000.0;
@@ -22,8 +22,8 @@ AccelStepper stepper(AccelStepper::DRIVER, STEP_PIN, DIR_PIN);
 Adafruit_ST7735 tft(TFT_CS, TFT_DC, TFT_RST);
 
 // ====== Counter Buttons ======
-const uint8_t SW_UP   = 22;
-const uint8_t SW_DOWN = 23;
+const uint8_t SW_UP   = 16; //,22
+const uint8_t SW_DOWN = 17; //,23
 
 // ====== VL53L0X Distance Sensor ======
 VL53L0X sensor;

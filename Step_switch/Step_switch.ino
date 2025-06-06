@@ -1,13 +1,13 @@
 #include <AccelStepper.h>
 
-#define STEP_PIN    7
-#define DIR_PIN     6
-#define SW_FWD_PIN 22
-#define SW_BWD_PIN 23
+#define STEP_PIN    14 //14 ,7
+#define DIR_PIN     15 //15 ,6
+#define SW_FWD_PIN 16 //16 ,22
+#define SW_BWD_PIN 17 //17 ,23
 
 // ใส่ค่าที่คำนวณจากสูตรข้างบน
 const float MAX_SPEED    = 1333.0;   // ตัวอย่าง ~200 RPM
-const float ACCELERATION = 2000.0;   // ลองเอาไว้ก่อน ปรับลดลงถ้าเวียนหัว
+const float ACCELERATION = 1000.0;   // ลองเอาไว้ก่อน ปรับลดลงถ้าเวียนหัว
 
 AccelStepper stepper(AccelStepper::DRIVER, STEP_PIN, DIR_PIN);
 
