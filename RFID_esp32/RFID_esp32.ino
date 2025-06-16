@@ -1,3 +1,4 @@
+// โค้ดนี้ใช้สำหรับอ่านบัตร RFID บนบอร์ด ESP32
 #include <SPI.h>
 #include <MFRC522.h>
 

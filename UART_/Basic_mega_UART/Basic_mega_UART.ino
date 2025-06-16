@@ -1,5 +1,7 @@
 // Mega2560_UART_to_ESP32.ino
 
+// โค้ดนี้ใช้สำหรับการสื่อสาร UART บนบอร์ด Arduino Mega
+
 void setup() {
   // USB-Serial to PC (for debug)
   Serial.begin(115200);

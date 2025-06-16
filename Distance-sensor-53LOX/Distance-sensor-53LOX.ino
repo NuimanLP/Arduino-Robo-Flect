@@ -1,3 +1,4 @@
+// โค้ดนี้ใช้สำหรับวัดระยะทางด้วยเซ็นเซอร์ VL53L0X
 #include <Wire.h>
 #include <Adafruit_VL53L0X.h>
 

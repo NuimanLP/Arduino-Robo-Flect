@@ -1,3 +1,4 @@
+// โค้ดนี้ใช้สำหรับเชื่อมต่อ ESP32 กับ Firebase ผ่าน WiFi
 #include <WiFi.h>
 #include <SPI.h>
 #include <MFRC522.h>

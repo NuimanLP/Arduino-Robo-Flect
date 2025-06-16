@@ -23,6 +23,7 @@
 
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+// โค้ดนี้ใช้สำหรับควบคุมบอร์ด Arduino Mega ในโปรเจค Robo-Flect
 #include <AccelStepper.h>
 #include <VL53L0X.h>
 #include <Keypad.h>

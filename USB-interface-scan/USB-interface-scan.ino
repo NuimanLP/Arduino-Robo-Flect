@@ -1,3 +1,4 @@
+// โค้ดนี้ใช้สำหรับตรวจสอบอุปกรณ์ที่เชื่อมต่อผ่าน USB Host Shield
 #include <SPI.h>           // ไลบรารี SPI (จำเป็นสำหรับ USB Host Shield)
 #include <Wire.h>          // ไลบรารี I2C (ใช้กับ LCD ถ้าใช้ต่อร่วมกัน)
 #include <Usb.h>           // ไลบรารีหลักของ USB Host Shield Library 2.0
