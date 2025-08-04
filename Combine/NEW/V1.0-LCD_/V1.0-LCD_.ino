@@ -161,7 +161,7 @@ void loop() {
   if (up && !down && now - lastRefresh >= REFRESH_MS) {
     counter++;  // เพิ่มตัวนับขึ้น 1
     char buf[8];
-    snprintf(buf, sizeof(buf), "%d", counter);  // แปลงตัวเลขเป็นสตริง
+    snprintf(buf, sizeof(bufd), "%d", counter);  // แปลงตัวเลขเป็นสตริง
     clearField(0, colValue, 4);     // ล้างพื้นที่ช่อง Counter เดิม
     lcd.setCursor(colValue, 0);     // เคอร์เซอร์ไปที่คอลัมน์ 7 บรรทัด 0
     lcd.print(buf);                 // พิมพ์ค่าตัวนับใหม่
