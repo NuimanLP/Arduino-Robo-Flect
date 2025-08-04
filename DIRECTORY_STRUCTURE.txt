@@ -1,0 +1,118 @@
+Robo-Flect Project Directory Structure
+======================================
+
+📁 Robo-Flect/
+│
+├── 📄 README.md                     # Main project documentation
+├── 📄 REORGANIZATION_PLAN.md        # This reorganization plan
+├── 📄 DIRECTORY_STRUCTURE.txt       # This file
+├── 📄 LICENSE                       # License information
+├── 📄 .gitignore                    # Git ignore rules
+│
+├── 📁 src/                          # All source code
+│   ├── 📄 README.md
+│   │
+│   ├── 📁 main/                     # Production-ready code
+│   │   ├── 📁 arduino-mega/         # Arduino Mega 2560 controller
+│   │   │   └── 📄 V1.1-Mega.ino
+│   │   │
+│   │   ├── 📁 esp32/                # ESP32 WiFi module
+│   │   │   └── 📄 V1.1-ESP32.ino
+│   │   │
+│   │   └── 📁 shared/               # Shared libraries
+│   │       └── 📄 LiquidCrystal_I2C.h
+│   │
+│   └── 📁 components/               # Individual component code
+│       │
+│       ├── 📁 sensors/              # All sensor components
+│       │   ├── 📁 distance-vl53l0x/ # Distance sensor
+│       │   │   └── 📄 Distance-sensor-53LOX.ino
+│       │   │
+│       │   └── 📁 rfid-rc522/       # RFID reader
+│       │       └── 📄 RFID_esp32.ino
+│       │
+│       ├── 📁 actuators/            # Output devices
+│       │   ├── 📁 stepper-motor/    # Motor control
+│       │   │   ├── 📄 STEP_motor.ino
+│       │   │   └── 📄 Step_switch.ino
+│       │   │
+│       │   └── 📁 lcd-display/      # Display tests
+│       │       ├── 📁 graphictest_Mega/
+│       │       └── 📁 graphictest_UNO/
+│       │
+│       ├── 📁 communication/        # Communication protocols
+│       │   ├── 📁 uart/             # Serial communication
+│       │   │   ├── 📁 Basic_esp_UART/
+│       │   │   └── 📁 Basic_mega_UART/
+│       │   │
+│       │   ├── 📁 i2c-scanner/      # I2C utilities
+│       │   │   └── 📄 i2c_SCAN.ino
+│       │   │
+│       │   └── 📁 usb-interface/    # USB tools
+│       │       └── 📄 USB-interface-scan.ino
+│       │
+│       └── 📁 connectivity/         # Network/Cloud
+│           ├── 📁 firebase/         # Firebase integration
+│           │   ├── 📁 GetDocument/
+│           │   └── 📁 Wifi_firebase/
+│           │
+│           └── 📁 mqtt/             # MQTT protocol
+│               ├── 📁 iot_full/
+│               ├── 📁 iot_4_mqtt/
+│               └── 📁 random_button/
+│
+├── 📁 legacy/                       # Archived old versions
+│   ├── 📄 README.md
+│   │
+│   ├── 📁 v0-prototypes/            # Early development
+│   │   ├── 📁 HellO_keypad/
+│   │   ├── 📁 RFID_arduino/
+│   │   ├── 📁 Smooth-motor-with-refresh/
+│   │   └── 📁 Step-while-no-pull/
+│   │
+│   ├── 📁 v1-development/           # Version 1 iterations
+│   │   ├── 📁 Combine V0/
+│   │   ├── 📁 combine_KeypadV1/
+│   │   ├── 📁 combine_KeypadV2/
+│   │   └── 📁 combine_KeypadV3/
+│   │
+│   └── 📁 educational-examples/     # Commented versions
+│       ├── 📁 Read_combine_KeypadV1/
+│       └── 📁 Read_combine_KeypadV2/
+│
+├── 📁 docs/                         # Documentation
+│   ├── 📄 README.md                 # Full project documentation
+│   │
+│   ├── 📁 datasheets/               # Hardware specifications
+│   │   └── 📁 Sensor_Datasheet/
+│   │
+│   ├── 📁 guides/                   # User guides
+│   │   ├── 📄 setup-guide.md
+│   │   └── 📄 user-manual.md
+│   │
+│   └── 📁 api/                      # API documentation
+│       └── 📄 api-reference.md
+│
+├── 📁 tests/                        # Testing
+│   ├── 📄 Testing_Roadmap.md
+│   │
+│   ├── 📁 unit/                     # Unit tests
+│   │
+│   └── 📁 integration/              # Integration tests
+│
+├── 📁 examples/                     # Example implementations
+│   └── 📁 Kia-Robo-Flex/
+│       ├── 📄 Gear-code-Robo.ino
+│       └── 📄 LiquidCrystal_I2C.h
+│
+├── 📁 resources/                    # Additional resources
+│   └── 📁 pdfs/                     # PDF documents
+│
+└── 📁 tools/                        # Development tools
+    └── 📁 scripts/                  # Utility scripts
+
+========================================
+Legend:
+📁 = Directory/Folder
+📄 = File
+========================================
