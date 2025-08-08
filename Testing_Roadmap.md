@@ -2,7 +2,8 @@
 ## แนวทางการทดสอบ Function ย่อยๆ แบบ Step-by-Step
 ✔️✅ - Finished
 ❌ - Could not do that
-🧠 - Pending, Thinking, On draft designing
+🔧 - fixing
+🧠 -  Thinking, On draft designing
 ---
 
 ## 🎯 Phase 1: Basic Hardware Testing (พื้นฐาน)
@@ -18,7 +19,7 @@
 - [✅] เคลื่อนที่ไป-กลับ (Forward/Backward)
 - [✅] ควบคุมความเร็ว (Speed control)
 - [🧠] หยุดได้ทันที (Emergency stop)
-- [🧠] Calibrate home position
+- [🔧] Calibrate home position
 
 ### Milestone 1.3: Distance Sensor (VL53L0X) Test
 **เป้าหมาย:** ทดสอบการวัดระยะทาง
