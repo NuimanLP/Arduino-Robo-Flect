@@ -1,6 +1,8 @@
 # Robo-Flect Testing Milestones Roadmap
 ## แนวทางการทดสอบ Function ย่อยๆ แบบ Step-by-Step
-✔️✅, ❌
+✔️✅ - Finished
+❌ - Could not do that
+🧠 - Thinking, On drafdt designing
 ---
 
 ## 🎯 Phase 1: Basic Hardware Testing (พื้นฐาน)
@@ -15,14 +17,14 @@
 **เป้าหมาย:** ทดสอบการควบคุม Motor พื้นฐาน
 - [✅] เคลื่อนที่ไป-กลับ (Forward/Backward)
 - [✅] ควบคุมความเร็ว (Speed control)
-- [ ] หยุดได้ทันที (Emergency stop)
+- [🧠] หยุดได้ทันที (Emergency stop)
 - [ ] Calibrate home position
 
 ### Milestone 1.3: Distance Sensor (VL53L0X) Test
 **เป้าหมาย:** ทดสอบการวัดระยะทาง
 - [✅] อ่านค่าระยะทางต่อเนื่อง
 - [✅] ความแม่นยำ ±2-4CM
-- [ ] ตรวจจับ timeout/error
+- [✅] ตรวจจับ timeout/error
 
 ### Milestone 1.4: LCD Display Test
 **เป้าหมาย:** ทดสอบการแสดงผลบน LCD 20x4
