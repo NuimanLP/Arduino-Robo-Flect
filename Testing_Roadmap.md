@@ -99,8 +99,8 @@
 
 ### Milestone 4.2: RFID Authentication
 **เป้าหมาย:** ระบบ login ด้วยบัตร
-- [ ] อ่าน UID จากบัตร
-- [ ] ส่ง UID ไป Mega
+- [✅] อ่าน UID จากบัตร
+- [✅] ส่ง UID ไป Mega
 - [ ] แสดงชื่อผู้ใช้บน LCD
 
 ### Milestone 4.3: WiFi + MQTT Connection
