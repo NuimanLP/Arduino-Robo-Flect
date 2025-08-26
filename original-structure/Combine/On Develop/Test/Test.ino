@@ -63,7 +63,7 @@ void showDistText(const char* s) {
 const float PULSES_PER_REV = 400.0;   // DIP DM542 (ถ้าเป็น 200 ให้เปลี่ยนเป็น 200.0)
 const float BELT_PITCH_MM  = 2.0;     // GT2 = 2.0mm
 const float PULLEY_TEETH   = 20.0;    // ฟันพูลเลย์จริง
-const float CAL            = 0.50;    // ← จากอาการไป ~2 เท่า ลดครึ่งไว้ก่อน (ถ้าตั้ง DIP ถูก ให้ใช้ 1.00)
+const float CAL            = 0.50;
 
 const float MM_PER_REV     = BELT_PITCH_MM * PULLEY_TEETH;           // mm/รอบ
 const float PULSES_PER_MM  = (PULSES_PER_REV / MM_PER_REV) * CAL;    // pulses/mm
