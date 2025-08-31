@@ -121,7 +121,7 @@ int mapKeyToCm(char k) {
     case '4': return 40;
     case '5': return 50;
     case '6': return 60;
-    default:  return -1;
+    default:  return -1; // Testing here bro add some other case ex 0cm
   }
 }
 
