@@ -32,8 +32,8 @@ char keys[ROWS][COLS] = {
   {'7','8','9','C'},
   {'*','0','#','D'}
 };
-byte rowPins[ROWS] = {30, 31, 32, 33};
-byte colPins[COLS] = {26, 27, 28, 29};
+byte rowPins[ROWS] = {29, 28, 27, 26}; 
+byte colPins[COLS] = {33, 32, 31, 30};
 Keypad keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
 // ====== LCD columns ======
@@ -242,7 +242,7 @@ void setup() {
   Serial.println("VL53L0X OK (single-shot)");
 
   // LCD
-  lcd.begin(); lcd.backlight(); lcd.clear();
+  lcd.begin(20,4); lcd.backlight(); lcd.clear();
   lcd.setCursor(0,0); lcd.print("Target:");
   lcd.setCursor(0,1); lcd.print("Dist:");
   lcd.setCursor(0,2); lcd.print("Key:");
