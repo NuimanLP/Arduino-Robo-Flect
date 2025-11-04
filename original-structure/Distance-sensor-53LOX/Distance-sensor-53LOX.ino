@@ -7,7 +7,7 @@
 Adafruit_VL53L0X lox = Adafruit_VL53L0X();
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   while (!Serial) delay(10);
 
   // ตั้ง PIN_XSHUT เป็น OUTPUT แล้วปลุกเซ็นเซอร์
